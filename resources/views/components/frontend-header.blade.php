@@ -7,7 +7,7 @@
 <head>
  <meta charset="">
  <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> Tandoor House</title>
+<title> Tandoor House 1</title>
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 <!-- Stylesheets -->
 <link href="{{asset('web-resources/css/bootstrap.css')}}" rel="stylesheet" async>
