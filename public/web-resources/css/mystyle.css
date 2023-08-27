@@ -103,8 +103,19 @@ p.error{
 footer .div-none{
     display: none;
 }
-
+.d-cart{
+        display:block;
+}
+.d-none{
+    display:none;
+}
 @media only screen and (max-width: 768px){
+    .d-none{
+        display:block!important;
+    }
+    #search_form .d-cart{
+        display:none;
+    }
     .foot-call {
         float: left;
         position: fixed;
@@ -156,6 +167,7 @@ footer .div-none{
     .inner-banner.home-banner {
         padding-top: 190px;
     }
+    
 }
 @media only screen and (max-width: 1499px){
     .inner-banner.home-banner {

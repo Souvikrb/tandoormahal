@@ -1,0 +1,24 @@
+[19-Aug-2023 19:29:43 UTC] PHP Warning:  require(/home/tandoormahal/public_html/public/vendor/autoload.php): failed to open stream: No such file or directory in /home/tandoormahal/public_html/public/index.php on line 34
+[19-Aug-2023 19:29:43 UTC] PHP Stack trace:
+[19-Aug-2023 19:29:43 UTC] PHP   1. {main}() /home/tandoormahal/public_html/index.php:0
+[19-Aug-2023 19:29:43 UTC] PHP   2. require_once() /home/tandoormahal/public_html/index.php:21
+[19-Aug-2023 19:29:43 UTC] PHP Fatal error:  require(): Failed opening required '/home/tandoormahal/public_html/public/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/tandoormahal/public_html/public/index.php on line 34
+[19-Aug-2023 19:29:43 UTC] PHP Stack trace:
+[19-Aug-2023 19:29:43 UTC] PHP   1. {main}() /home/tandoormahal/public_html/index.php:0
+[19-Aug-2023 19:29:43 UTC] PHP   2. require_once() /home/tandoormahal/public_html/index.php:21
+[19-Aug-2023 19:30:25 UTC] PHP Warning:  require(/home/tandoormahal/public_html/public/vendor/autoload.php): failed to open stream: No such file or directory in /home/tandoormahal/public_html/public/index.php on line 34
+[19-Aug-2023 19:30:25 UTC] PHP Stack trace:
+[19-Aug-2023 19:30:25 UTC] PHP   1. {main}() /home/tandoormahal/public_html/index.php:0
+[19-Aug-2023 19:30:25 UTC] PHP   2. require_once() /home/tandoormahal/public_html/index.php:21
+[19-Aug-2023 19:30:25 UTC] PHP Fatal error:  require(): Failed opening required '/home/tandoormahal/public_html/public/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/tandoormahal/public_html/public/index.php on line 34
+[19-Aug-2023 19:30:25 UTC] PHP Stack trace:
+[19-Aug-2023 19:30:25 UTC] PHP   1. {main}() /home/tandoormahal/public_html/index.php:0
+[19-Aug-2023 19:30:25 UTC] PHP   2. require_once() /home/tandoormahal/public_html/index.php:21
+[19-Aug-2023 19:30:39 UTC] PHP Warning:  require_once(/home/tandoormahal/public_html/public/bootstrap/app.php): failed to open stream: No such file or directory in /home/tandoormahal/public_html/public/index.php on line 47
+[19-Aug-2023 19:30:39 UTC] PHP Stack trace:
+[19-Aug-2023 19:30:39 UTC] PHP   1. {main}() /home/tandoormahal/public_html/index.php:0
+[19-Aug-2023 19:30:39 UTC] PHP   2. require_once() /home/tandoormahal/public_html/index.php:21
+[19-Aug-2023 19:30:39 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/tandoormahal/public_html/public/bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/tandoormahal/public_html/public/index.php on line 47
+[19-Aug-2023 19:30:39 UTC] PHP Stack trace:
+[19-Aug-2023 19:30:39 UTC] PHP   1. {main}() /home/tandoormahal/public_html/index.php:0
+[19-Aug-2023 19:30:39 UTC] PHP   2. require_once() /home/tandoormahal/public_html/index.php:21

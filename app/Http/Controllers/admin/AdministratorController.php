@@ -23,6 +23,7 @@ class AdministratorController extends Controller
 
     public function login_save(Request $request)
     {
+        
         $validation = $request->validate([
             'phone'    => 'required|numeric',
             'password' => 'required'

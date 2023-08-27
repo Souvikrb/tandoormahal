@@ -55,7 +55,7 @@
                                                             @if( $data->count < '1')
                                                                 <button class="btn cart-btn" onclick="add_to_cart('{{$data->prodid}}','add','{{$data->isHalf}}')">ADD</button>
                                                             @else
-                                                                <button class="btn addbtn "><span onclick="add_to_cart('{{$data->prodid}}','remove'$data->isHalf)" class="minus">-</span><span class="count">{{$data->count}}</span><span class="plus" onclick="add_to_cart('{{$data->prodid}}','add','{{$data->isHalf}}')">+</span></button>
+                                                                <button class="btn addbtn "><span onclick="add_to_cart('{{$data->prodid}}','remove','{{$data->isHalf}}')" class="minus">-</span><span class="count">{{$data->count}}</span><span class="plus" onclick="add_to_cart('{{$data->prodid}}','add','{{$data->isHalf}}')">+</span></button>
                                                             @endif
                                                         </div>
                                                     </div>

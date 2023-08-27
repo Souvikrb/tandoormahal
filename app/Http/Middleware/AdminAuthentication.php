@@ -17,6 +17,7 @@ class AdminAuthentication
      */
     public function handle(Request $request, Closure $next)
     {
+      
         $adminId =  session::get('adminId');
 
         if($adminId == ''){

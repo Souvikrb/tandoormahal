@@ -62,7 +62,7 @@
                             <div class="card-title">
                                 <div class="row">
                                     <div class="col-md-3 col-3 m-auto text-center">
-                                        <img class="badge-image" src="{{asset('storage/products/'.$d->prodImg)}}">
+                                        <img class="badge-image" src="../{{asset('storage/products/'.$d->prodImg)}}">
                                         <p class="mt-2"><span class="right badge badge-{{$color}} pt-2 pb-2 badge-status ">{{$d->status}}</span></p>
                                     </div>
                                     <div class="col-md-9 col-9 mt-3">

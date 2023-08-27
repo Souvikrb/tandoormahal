@@ -14,7 +14,7 @@
                         <span class="s-info tag-badge " data-slug="">Recomanded</span>
 
                         <input type="hidden" name="cat_val" id="cat_val">
-                        <input type="text" class="search-field" autocomplete="off" list="menulist" name="dish" value=""
+                        <input type="text" class="search-field" autocomplete="off" list="menulist" name="s" value="<?=(isset($_GET['s']))?$_GET['s']:''?>"
                             placeholder="Find anythings">
                         <datalist id="menulist">
                             <option value="Tandoor">
@@ -145,10 +145,13 @@ function add_to_cart(id,type){
 
                 $('.cart-pack').html('<i class="fa fa-shopping-cart"></i><span class="badge badge-danger cart-badge">'+result.cart_count+'</span>');
                 
+                $('.foot-cart-pack').html('<i class="fa fa-shopping-cart"></i><span class="badge badge-dark cart-badge">'+result.cart_count+'</span>');
+                
             }
             if(result.count < 1){
                 $('.prod'+id).html('<button onclick="add_to_cart('+"'"+id+"'"+","+"'add'"+')" class="btn cart-btn" >ADD</button>');
                 $('.cart-pack').html('<i class="fa fa-shopping-cart"></i>');
+                $('.foot-cart-pack').html('<i class="fa fa-shopping-cart"></i>');
                 
             }
 

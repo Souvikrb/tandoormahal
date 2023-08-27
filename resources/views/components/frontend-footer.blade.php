@@ -9,12 +9,12 @@
                     <div class="footer-col info-col col-lg-6 col-md-12 col-sm-12">
                         <div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="logo"><a href="index.html" ><img src="{{asset('web-resources/images/logo.png')}}" alt="" ></a></div>
+                                <div class="logo"><a href="{{url('/')}}" ><img src="{{asset('web-resources/images/logo.png')}}" alt="" ></a></div>
                                 <div class="info">
                                     <ul>
                                         <li>Rasapunja More, Kolkata - 70010411</li>
                                         <li><a href="mailto:booking@domainname.com">enquiry@tandoormahal.in</a></li>
-                                        <li><a href="tel:+917980667658">Booking Request : +91 7980667658</a></li>
+                                        <li><a href="tel:+919123345052">Booking Request : +91 91233 45052</a></li>
                                     </ul>
                                 </div>
                            
@@ -25,21 +25,20 @@
                     <div class="footer-col links-col col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <ul class="links">
-                                <li><a href="home.html">Home</a></li>
-                                <li><a href="menu-list-1.html">Menus</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="our-chef.html">Our chefs</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="{{url('/')}}">Home</a></li>
+                                <li><a href="{{url('/')}}">Menus</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <!--Footer Col-->
                     <div class="footer-col links-col last col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <img class="social-icon" src="{{asset('web-resources/images/icons/facebook.svg')}}">
-                            <img class="social-icon" src="{{asset('web-resources/images/icons/instagram.svg')}}">
-                            <img class="social-icon" src="{{asset('web-resources/images/icons/linkedin.svg')}}">
-                            <img class="social-icon" src="{{asset('web-resources/images/icons/youtube.svg')}}">
+							<ul class="links">
+                                <li><a href="{{url('/')}}">Privacy Policy</a></li>
+                                <li><a href="{{url('/')}}">Terms & Conditions</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -63,10 +62,24 @@
 
         <div class="foot-call">
 
-            <div class="col border-right"><a href="https://api.whatsapp.com/send?phone=9123345052&amp;text=Hello" target="_blank"><img src="https://img.icons8.com/color/30/000000/whatsapp.png" alt="Whatsapp Us - axisclinics"></a></div>
-            <div class="col border-right" style="padding-top: 5px;"><a href="javascript:void(0)" style="color:white" class="filter"><i style="font-size: 24px;" class="fa fa-filter-list"></i></a></div>
-            <div class="col border-right" style="padding-top: 5px;"><a href="{{route('/cart')}}" style="color:white"><i style="font-size: 24px;" class="fa fa-shopping-cart"></i><span class="badge badge-dark cart-badge">1</span></a></div>
-            <div class="col" style="padding-top: 5px;"><a href="{{route('/user/order')}}" style="color:white"><i style="font-size: 24px;" class="fa fa-user"></i></a></div>
+            <div class="col "><a href="https://api.whatsapp.com/send?phone=9123345052&amp;text=Hello" target="_blank"><img src="https://img.icons8.com/color/30/000000/whatsapp.png" alt="Whatsapp Us - axisclinics">
+            </a></div>
+            <div class="col " style="padding-top: 5px;"><a href="javascript:void(0)" style="color:white" class="filter"><i style="font-size: 24px;" class="fa fa-filter-list"></i>
+            
+            </a></div>
+            <div class="col " style="padding-top: 5px;">
+                <a href="{{route('/cart')}}" class="foot-cart-pack" style="color:white">
+                    <i style="font-size: 24px;" class="fa fa-shopping-cart"></i>
+                    @if(Session::get('cart_count') > 0)
+                                            <span class="badge badge-dark cart-badge">{{Session::get('cart_count')}}</span>
+                                        @endif
+                                       
+                   
+                </a>
+            </div>
+            <div class="col" style="padding-top: 5px;"><a href="{{route('/user/order')}}" style="color:white"><i style="font-size: 24px;" class="fa fa-box"></i>
+           
+            </a></div>
         </div>
     </footer>
 

@@ -19,6 +19,7 @@ label:not(.form-check-label):not(.custom-file-label) {
 }
 
 .badge-image{
+    height: 50px;
     width: 50px;
     box-shadow: 3px 6px 8px 0px #FFEB3B;
     border-radius: 50%;

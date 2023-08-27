@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html  class="no-js">
 
@@ -10,7 +13,7 @@
 <link href="{{asset('web-resources/css/bootstrap.css')}}" rel="stylesheet" async>
 <link href="{{asset('web-resources/css/style.css')}}" rel="stylesheet" async>
 <link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="icon" href="" type="image/x-icon">
+<link rel="icon" href="{{asset('favtandoor.png')}}" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -48,7 +51,7 @@
                     <div class="top-right clearfix">
                         <ul class="top-info clearfix">
                             <li>
-                                <a href="tel:+917980667658"><i class="con far fa-phone"></i>  +91 7980667658 </a>
+                                <a href="tel:+919123345052"><i class="con far fa-phone"></i>  +91 91233 45052 </a>
                             </li>
                             @if(Session::has('userId'))
                                 <li>
@@ -91,7 +94,7 @@
                                     <li><a href="<?=URL::to('/');?>">Recomanded</a></li>
                                     <li><a href="<?=URL::to('/');?>">Special Thali</a></li>
                                     <li><a href="<?=URL::to('/');?>">September Special Offer</a></li>
-                                    <li><a href="https://api.whatsapp.com/send?phone=9123345052&amp;text=Hello" target="_blank">Chat With Us</a></li>
+                                    
                                 </ul> 
 
                             </nav>
@@ -105,7 +108,7 @@
                         <form method="get" id="search_form" action="<?=URL::to('/');?>/menu">
                         <div class="form-group" style="text-align: left;">
                             
-                            <a href="{{route('/cart')}}" class="cart-icon search-mob-btn mr-3">
+                            <a href="{{route('/cart')}}" class="cart-icon search-mob-btn d-cart mr-3">
                                 <span class="btn-wrap">
                                     <span class="text-one cart-pack">
                                         <i class="fa fa-shopping-cart"></i>
@@ -115,14 +118,21 @@
                                     </span>
                                 </span>
                             </a>
-                            <!-- <a href="{{route('/cart')}}" class="cart-icon search-mob-btn mr-3">
+                            <a href="{{route('/user/profile')}}" class="cart-icon search-mob-btn mr-3 d-none">
                                 <span class="btn-wrap">
-                                    <span class="text-one">
-                                        <i class="fa fa-bell"></i>
-                                        <span class="badge badge-danger cart-badge">1</span>
+                                    <span class="text-one cart-pack">
+                                        <i style="font-size:30px" class="fa fa-user-circle"></i>
                                     </span>
                                 </span>
-                            </a> -->
+                            </a>
+                            <!--<a href="{{route('/cart')}}" class="cart-icon search-mob-btn mr-3">-->
+                            <!--    <span class="btn-wrap">-->
+                            <!--        <span class="text-one">-->
+                            <!--            <i class="fa fa-bell"></i>-->
+                            <!--            <span class="badge badge-danger cart-badge">1</span>-->
+                            <!--        </span>-->
+                            <!--    </span>-->
+                            <!--</a>-->
                         </div>
                     </form>
                         </div>
