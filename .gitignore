@@ -16,3 +16,4 @@ yarn-error.log
 /resources/views/administrator/login.blade.php
 /resources/views/components/admin-footer.blade.php
 /resources/views/components/admin-header.blade.php
+/routes/web.php
