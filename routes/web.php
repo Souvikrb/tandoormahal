@@ -134,9 +134,9 @@ Route::middleware([AdminAuthentication::class])->group(function () {
 
     //All Order route
 
-    Route::get('admin/order',[OrderController::class,'index'])->name('/admin/order');
+    Route::get('order',[OrderController::class,'index'])->name('/admin/order');
 
-    Route::post('admin/order/updateOrderStatus',[OrderController::class,'updateOrderStatus'])->name('/admin/order/updateOrderStatus');
+    Route::post('order/updateOrderStatus',[OrderController::class,'updateOrderStatus'])->name('/admin/order/updateOrderStatus');
 
     /* -------------------------------------------------------------------------------*/
 
@@ -152,15 +152,15 @@ Route::middleware([AdminAuthentication::class])->group(function () {
 
     //All product route
 
-    Route::get('/admin/products',[ProductController::class,'index'])->name("/admin/products");
+    Route::get('/products',[ProductController::class,'index'])->name("/admin/products");
 
-    Route::get('/admin/products/add',[ProductController::class,'create'])->name('/admin/products/add');
+    Route::get('/products/add',[ProductController::class,'create'])->name('/admin/products/add');
 
-    Route::post('/admin/products/store',[ProductController::class,'store'])->name('/admin/products/store');
+    Route::post('/products/store',[ProductController::class,'store'])->name('/admin/products/store');
 
-    Route::get('/admin/products/edit/{id}',[ProductController::class,'edit'])->name('/admin/products/edit/');
+    Route::get('/products/edit/{id}',[ProductController::class,'edit'])->name('/admin/products/edit/');
 
-    Route::post('/admin/products/update',[ProductController::class,'update'])->name('/admin/products/update');
+    Route::post('/products/update',[ProductController::class,'update'])->name('/admin/products/update');
 
     Route::prefix('product')->group(function () {
 
