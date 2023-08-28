@@ -134,9 +134,9 @@ Route::middleware([AdminAuthentication::class])->group(function () {
 
     //All Order route
 
-    Route::get('/order',[OrderController::class,'index'])->name('/admin/order');
+    Route::get('order',[OrderController::class,'index'])->name('/admin/order');
 
-    Route::post('/order/updateOrderStatus',[OrderController::class,'updateOrderStatus'])->name('/admin/order/updateOrderStatus');
+    Route::post('order/updateOrderStatus',[OrderController::class,'updateOrderStatus'])->name('/admin/order/updateOrderStatus');
 
     /* -------------------------------------------------------------------------------*/
 
